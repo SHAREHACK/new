@@ -1642,7 +1642,8 @@ return lib
 
 
 ---------- main --------
-local function CEJZUS_fake_script() -- Main.LocalScript 
+local UIGradient = Instance.new("UIGradient")
+local function CEJZUS_fake_script()
 	local script = Instance.new('LocalScript', Main)
 
 	local button = script.Parent
