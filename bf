@@ -90,6 +90,7 @@ key:addKeybind("Toggle Keybind", Enum.KeyCode.RightControl, function()
 	venyx:toggle()
 end, function()
 	print("Changed Keybind")
+	end
 end)
 
 
