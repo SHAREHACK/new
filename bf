@@ -5,7 +5,7 @@ local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
-local key = theme:addSection("Keybind")
+local CloseBind = Enum.KeyCode.RightControl
 
 local ui = Instance.new("ScreenGui")
 ui.Name = "ui"
@@ -85,19 +85,16 @@ local function MakeDraggable(topbarobject, object)
     )
 end
 
-key:addKeybind("Toggle Keybind", Enum.KeyCode.RightControl, function()
-	print("Activated Keybind")
-	venyx:toggle()
-end, function()
-	print("Changed Keybind")
-	end
-end)
-
-
-
-
-
-
+function lib:Window(text, preset, closebind)
+    CloseBind = closebind or Enum.KeyCode.RightControl
+    PresetColor = preset or Color3.fromRGB(44, 120, 224)
+    fs = false
+    local Main = Instance.new("Frame")
+    local TabHold = Instance.new("Frame")
+    local TabHoldLayout = Instance.new("UIListLayout")
+    local Title = Instance.new("TextLabel")
+    local TabFolder = Instance.new("Folder")
+    local DragFrame = Instance.new("Frame")
 
     Main.Name = "Main"
     Main.Parent = ui
