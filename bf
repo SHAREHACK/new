@@ -99,7 +99,7 @@ function lib:Window(text, preset, closebind)
     Main.Name = "Main"
     Main.Parent = ui
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
-    Main.BackgroundColor3 = Color3.fromRGB(255, 170, 255)
+    Main.BackgroundColor3 = Color3.fromRGB(94, 255, 121)
     Main.BorderSizePixel = 0
     Main.Position = UDim2.new(0.5, 0, 0.5, 0)
     Main.Size = UDim2.new(0, 0, 0, 0)
@@ -127,7 +127,7 @@ function lib:Window(text, preset, closebind)
     Title.Font = Enum.Font.GothamSemibold
     Title.Text = text
     Title.TextColor3 = Color3.fromRGB(68, 68, 68)
-    Title.TextSize = 12.000
+    Title.TextSize = 20.000
     Title.TextXAlignment = Enum.TextXAlignment.Left
 
     DragFrame.Name = "DragFrame"
