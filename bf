@@ -1465,31 +1465,8 @@ function lib:Window(text, preset, closebind)
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
         end
         
-        function ContainerContent:Line()
-			local Line = Instance.new("TextButton")
-			local LineCorner = Instance.new("UICorner")
-
-			Line.Name = "Line"
-			Line.Parent = Container
-			Line.BackgroundColor3 = Color3.fromRGB(64, 68, 75)
-			Line.ClipsDescendants = true
-			Line.Position = UDim2.new(0, 0, 0.70091325, 0)
-			Line.Size = UDim2.new(0, 457, 0, 4)
-			Line.AutoButtonColor = false
-			Line.Font = Enum.Font.SourceSans
-			Line.Text = ""
-			Line.TextColor3 = Color3.fromRGB(0, 0, 0)
-			Line.TextSize = 14.000
-
-			LineCorner.CornerRadius = UDim.new(0, 4)
-			LineCorner.Name = "LineCorner"
-			LineCorner.Parent = Line
-        
-        	Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
-		end
-           
+       
      
-        
         function tabcontent:Label(text)
             local Label = Instance.new("TextButton")
             local LabelCorner = Instance.new("UICorner")
