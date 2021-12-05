@@ -682,6 +682,12 @@ function lib:Window(text, preset, closebind)
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
         end
         function tabcontent:Slider(text, min, max, start, callback)
+        local SliderFunc = {}
+			local SliderDescToggled = false
+                        local dragging = false
+			if desc == "" then
+				desc = "There is no description for this slider."
+			end
             local dragging = false
             local Slider = Instance.new("TextButton")
             local SliderCorner = Instance.new("UICorner")
