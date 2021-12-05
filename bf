@@ -1485,7 +1485,8 @@ function lib:Window(text, preset, closebind)
 			LineCorner.Name = "LineCorner"
 			LineCorner.Parent = Line
         
-        
+        	Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+		end
            
      
         
