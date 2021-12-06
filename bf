@@ -141,7 +141,7 @@ function lib:Window(text, preset, closebind)
     MakeDraggable(DragFrame, Main)
 
     local uitoggled = false
-	UserInputService.InputBegan:Connect(
+    UserInputService.InputBegan:Connect(
 		function(io, p)
 			if io.KeyCode == CloseBind then
 				if uitoggled == false then
@@ -150,7 +150,7 @@ function lib:Window(text, preset, closebind)
 					wait(.5)
 					ui.Enabled = false
 				else
-					MainFrame:TweenSize(UDim2.new(0, 706, 0, 484), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+					 Main:TweenSize(UDim2.new(0, 560, 0, 319),Enum.EasingDirection.Out,Enum.EasingStyle.Quart,.6,true)
 					ui.Enabled = true
 					uitoggled = false
 				end
