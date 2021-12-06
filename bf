@@ -148,16 +148,16 @@ function lib:Window(text, preset, closebind)
                     Main:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
                     uitoggled = true
                     wait(.5)
-                    knixhub.Enabled = false
+                    ui.Enabled = false
                 else
-                    Main:TweenSize(
+                    Main:TweenSize(UDim2.new(0, 706, 0, 484), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
                         UDim2.new(0, 560, 0, 319),
                         Enum.EasingDirection.Out,
                         Enum.EasingStyle.Quart,
                         .6,
                         true
                     )
-                    knixhub.Enabled = true
+                    ui.Enabled = true
                     uitoggled = false
                 end
             end
