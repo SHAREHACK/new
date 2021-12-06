@@ -7,10 +7,10 @@ local Mouse = LocalPlayer:GetMouse()
 local PresetColor = Color3.fromRGB(44, 120, 224)
 local CloseBind = Enum.KeyCode.RightControl
 
-local ui = Instance.new("ScreenGui")
-ui.Name = "ui"
-ui.Parent = game.CoreGui
-ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local hnlib = Instance.new("ScreenGui")
+hnlib.Name = "hnlib"
+hnlib.Parent = game.CoreGui
+hnlib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 coroutine.wrap(
     function()
@@ -85,8 +85,8 @@ local function MakeDraggable(topbarobject, object)
     )
 end
 
-function lib:Window(text, preset, toclose)
-    CloseBind = toclose or Enum.KeyCode.RightControl
+function lib:Window(text, preset, closebind)
+    CloseBind = closebind or Enum.KeyCode.RightControl
     PresetColor = preset or Color3.fromRGB(24, 24, 24)
     fs = false
     local Main = Instance.new("Frame")
@@ -97,7 +97,7 @@ function lib:Window(text, preset, toclose)
     local DragFrame = Instance.new("Frame")
 
     Main.Name = "Main"
-    Main.Parent = ui
+    Main.Parent = hnlib
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
     Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
     Main.BorderSizePixel = 0
@@ -142,21 +142,27 @@ function lib:Window(text, preset, toclose)
 
     local uitoggled = false
     UserInputService.InputBegan:Connect(
-		function(io, p)
-			if io.KeyCode == CloseBind then
-				if uitoggled == false then
-					MainFrame:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
-					uitoggled = true
-					wait(.5)
-					ui.Enabled = false
-				else
-					 Main:TweenSize(UDim2.new(0, 560, 0, 319),Enum.EasingDirection.Out,Enum.EasingStyle.Quart,.6,true)
-					ui.Enabled = true
-					uitoggled = false
-				end
-			end
-		end
-	)
+        function(io, p)
+            if io.KeyCode == CloseBind then
+                if uitoggled == false then
+                    Main:TweenSize(UDim2.new(0, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .6, true)
+                    uitoggled = true
+                    wait(.5)
+                    hnlib.Enabled = false
+                else
+                    Main:TweenSize(
+                        UDim2.new(0, 560, 0, 319),
+                        Enum.EasingDirection.Out,
+                        Enum.EasingStyle.Quart,
+                        .6,
+                        true
+                    )
+                    hnlib.Enabled = true
+                    uitoggled = false
+                end
+            end
+        end
+    )
 
     TabFolder.Name = "TabFolder"
     TabFolder.Parent = Main
@@ -1642,4 +1648,3 @@ function lib:Window(text, preset, toclose)
     return tabhold
 end
 return lib
-
