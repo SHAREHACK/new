@@ -238,7 +238,7 @@ function lib:Window(text, preset, closebind)
         OkayBtnTitle.Size = UDim2.new(0, 181, 0, 42)
         OkayBtnTitle.Font = Enum.Font.Gotham
         OkayBtnTitle.Text = textbtn
-        OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+        OkayBtnTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
         OkayBtnTitle.TextSize = 14.000
         OkayBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
