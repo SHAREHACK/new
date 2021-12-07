@@ -250,7 +250,7 @@ function lib:Window(text, preset, closebind)
         NotificationTitle.Size = UDim2.new(0, 143, 0, 26)
         NotificationTitle.Font = Enum.Font.Gotham
         NotificationTitle.Text = texttitle
-        NotificationTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+        NotificationTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
         NotificationTitle.TextSize = 18.000
         NotificationTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -262,7 +262,7 @@ function lib:Window(text, preset, closebind)
         NotificationDesc.Size = UDim2.new(0, 143, 0, 91)
         NotificationDesc.Font = Enum.Font.Gotham
         NotificationDesc.Text = textdesc
-        NotificationDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+        NotificationDesc.TextColor3 = Color3.fromRGB(0, 255, 255)
         NotificationDesc.TextSize = 15.000
         NotificationDesc.TextWrapped = true
         NotificationDesc.TextXAlignment = Enum.TextXAlignment.Left
