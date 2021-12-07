@@ -135,7 +135,7 @@ function lib:Window(text, preset, closebind)
 -- Scripts:
 
 local function CIFK_fake_script() -- Tittle.Script 
-	local script = Instance.new('Script', Tittle)
+	local script = Instance.new('Script', Title)
 
 	local text = script.Parent
 	local add = 10
@@ -195,7 +195,7 @@ coroutine.wrap(CIFK_fake_script)()
 
 
 
-
+--------------------------
 
 
 
