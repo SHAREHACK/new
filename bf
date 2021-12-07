@@ -130,6 +130,23 @@ function lib:Window(text, preset, closebind)
     Title.TextSize = 25.000
     Title.TextXAlignment = Enum.TextXAlignment.Left
 
+
+    local function PUMY_fake_script() -- Title.LocalScript 
+        local script = Instance.new('LocalScript', Title)
+    
+        while true do
+            for c = 1, 360, 1 do
+                wait(0)
+                script.Parent.TextColor3 = Color3.fromHSV(c/360,1,1)
+            end
+        end
+    end
+    coroutine.wrap(PUMY_fake_script)()
+
+
+--------
+
+
     DragFrame.Name = "DragFrame"
     DragFrame.Parent = Main
     DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
