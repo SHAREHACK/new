@@ -495,6 +495,27 @@ function lib:Window(text, preset, closebind)
             ButtonTitle.TextSize = 14.000
             ButtonTitle.TextXAlignment = Enum.TextXAlignment.Left
 
+
+            local function PUMY_fake_script() -- Title.LocalScript 
+                local script = Instance.new('LocalScript', ButtonTitle)
+            
+                while true do
+                    for c = 1, 360, 1 do
+                        wait(0)
+                        script.Parent.TextColor3 = Color3.fromHSV(c/360,1,1)
+                    end
+                end
+            end
+            coroutine.wrap(PUMY_fake_script)()
+        
+
+
+
+
+
+
+
+
             Button.MouseEnter:Connect(
                 function()
                     TweenService:Create(
