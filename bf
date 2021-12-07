@@ -357,6 +357,29 @@ function lib:Window(text, preset, closebind)
         TabTitle.TextSize = 14.000
         TabTitle.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
+
+
+
+        local function PUMY_fake_script() -- Title.LocalScript 
+            local script = Instance.new('LocalScript', TabTitle)
+        
+            while true do
+                for c = 1, 360, 1 do
+                    wait(0)
+                    script.Parent.TextColor3 = Color3.fromHSV(c/360,1,1)
+                end
+            end
+        end
+        coroutine.wrap(PUMY_fake_script)()
+    
+
+
+
+
+
+
         TabBtnIndicator.Name = "TabBtnIndicator"
         TabBtnIndicator.Parent = TabBtn
         TabBtnIndicator.BackgroundColor3 = PresetColor
