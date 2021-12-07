@@ -238,7 +238,7 @@ function lib:Window(text, preset, closebind)
         OkayBtnTitle.Size = UDim2.new(0, 181, 0, 42)
         OkayBtnTitle.Font = Enum.Font.Gotham
         OkayBtnTitle.Text = textbtn
-        OkayBtnTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
+        OkayBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         OkayBtnTitle.TextSize = 14.000
         OkayBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -250,7 +250,7 @@ function lib:Window(text, preset, closebind)
         NotificationTitle.Size = UDim2.new(0, 143, 0, 26)
         NotificationTitle.Font = Enum.Font.Gotham
         NotificationTitle.Text = texttitle
-        NotificationTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
+        NotificationTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
         NotificationTitle.TextSize = 18.000
         NotificationTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -262,7 +262,7 @@ function lib:Window(text, preset, closebind)
         NotificationDesc.Size = UDim2.new(0, 143, 0, 91)
         NotificationDesc.Font = Enum.Font.Gotham
         NotificationDesc.Text = textdesc
-        NotificationDesc.TextColor3 = Color3.fromRGB(0, 255, 255)
+        NotificationDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
         NotificationDesc.TextSize = 15.000
         NotificationDesc.TextWrapped = true
         NotificationDesc.TextXAlignment = Enum.TextXAlignment.Left
@@ -336,7 +336,7 @@ function lib:Window(text, preset, closebind)
         TabTitle.Size = UDim2.new(0, 107, 0, 21)
         TabTitle.Font = Enum.Font.Gotham
         TabTitle.Text = text
-        TabTitle.TextColor3 = Color3.fromRGB(150, 150, 150)
+        TabTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
         TabTitle.TextSize = 14.000
         TabTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -451,7 +451,7 @@ function lib:Window(text, preset, closebind)
             ButtonTitle.Size = UDim2.new(0, 187, 0, 42)
             ButtonTitle.Font = Enum.Font.Gotham
             ButtonTitle.Text = text
-            ButtonTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            ButtonTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             ButtonTitle.TextSize = 14.000
             ButtonTitle.TextXAlignment = Enum.TextXAlignment.Left
 
