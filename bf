@@ -126,7 +126,7 @@ function lib:Window(text, preset, closebind)
     Title.Size = UDim2.new(0, 200, 0, 23)
     Title.Font = Enum.Font.GothamSemibold
     Title.Text = text
-    Title.TextColor3 = Color3.fromRGB(68, 68, 68)
+    Title.TextColor3 = Color3.fromRGB(255, 0, 0)
     Title.TextSize = 20.000
     Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -521,7 +521,7 @@ function lib:Window(text, preset, closebind)
             ToggleTitle.Size = UDim2.new(0, 187, 0, 42)
             ToggleTitle.Font = Enum.Font.Gotham
             ToggleTitle.Text = text
-            ToggleTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            ToggleTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             ToggleTitle.TextSize = 14.000
             ToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -720,7 +720,7 @@ function lib:Window(text, preset, closebind)
             SliderTitle.Size = UDim2.new(0, 187, 0, 42)
             SliderTitle.Font = Enum.Font.Gotham
             SliderTitle.Text = text
-            SliderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            SliderTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             SliderTitle.TextSize = 14.000
             SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -732,7 +732,7 @@ function lib:Window(text, preset, closebind)
             SliderValue.Size = UDim2.new(0, 335, 0, 42)
             SliderValue.Font = Enum.Font.Gotham
             SliderValue.Text = tostring(start and math.floor((start / max) * (max - min) + min) or 0)
-            SliderValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+            SliderValue.TextColor3 = Color3.fromRGB(0, 255, 255)
             SliderValue.TextSize = 14.000
             SliderValue.TextXAlignment = Enum.TextXAlignment.Right
 
@@ -853,7 +853,7 @@ function lib:Window(text, preset, closebind)
             DropdownTitle.Size = UDim2.new(0, 187, 0, 42)
             DropdownTitle.Font = Enum.Font.Gotham
             DropdownTitle.Text = text
-            DropdownTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            DropdownTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             DropdownTitle.TextSize = 14.000
             DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -934,7 +934,7 @@ function lib:Window(text, preset, closebind)
                 Item.AutoButtonColor = false
                 Item.Font = Enum.Font.Gotham
                 Item.Text = v
-                Item.TextColor3 = Color3.fromRGB(255, 255, 255)
+                Item.TextColor3 = Color3.fromRGB(0, 255, 255)
                 Item.TextSize = 15.000
 
                 ItemCorner.CornerRadius = UDim.new(0, 4)
@@ -1046,7 +1046,7 @@ function lib:Window(text, preset, closebind)
             ColorpickerTitle.Size = UDim2.new(0, 187, 0, 42)
             ColorpickerTitle.Font = Enum.Font.Gotham
             ColorpickerTitle.Text = text
-            ColorpickerTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            ColorpickerTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             ColorpickerTitle.TextSize = 14.000
             ColorpickerTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1082,7 +1082,7 @@ function lib:Window(text, preset, closebind)
             ConfirmBtnTitle.Size = UDim2.new(0, 33, 0, 32)
             ConfirmBtnTitle.Font = Enum.Font.Gotham
             ConfirmBtnTitle.Text = "Confirm"
-            ConfirmBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            ConfirmBtnTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             ConfirmBtnTitle.TextSize = 14.000
             ConfirmBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1118,7 +1118,7 @@ function lib:Window(text, preset, closebind)
             RainbowToggleTitle.Size = UDim2.new(0, 33, 0, 32)
             RainbowToggleTitle.Font = Enum.Font.Gotham
             RainbowToggleTitle.Text = "Rainbow"
-            RainbowToggleTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            RainbowToggleTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             RainbowToggleTitle.TextSize = 14.000
             RainbowToggleTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1500,7 +1500,7 @@ function lib:Window(text, preset, closebind)
             LabelTitle.Size = UDim2.new(0, 187, 0, 42)
             LabelTitle.Font = Enum.Font.Gotham
             LabelTitle.Text = text
-            LabelTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            LabelTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             LabelTitle.TextSize = 14.000
             LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1533,7 +1533,7 @@ function lib:Window(text, preset, closebind)
             TextboxTitle.Size = UDim2.new(0, 187, 0, 42)
             TextboxTitle.Font = Enum.Font.Gotham
             TextboxTitle.Text = text
-            TextboxTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextboxTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             TextboxTitle.TextSize = 14.000
             TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1553,7 +1553,7 @@ function lib:Window(text, preset, closebind)
             TextBox.Size = UDim2.new(0, 100, 0, 23)
             TextBox.Font = Enum.Font.Gotham
             TextBox.Text = ""
-            TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextBox.TextColor3 = Color3.fromRGB(0, 255, 255)
             TextBox.TextSize = 14.000
 
             TextBox.FocusLost:Connect(
@@ -1600,7 +1600,7 @@ function lib:Window(text, preset, closebind)
             BindTitle.Size = UDim2.new(0, 187, 0, 42)
             BindTitle.Font = Enum.Font.Gotham
             BindTitle.Text = text
-            BindTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+            BindTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             BindTitle.TextSize = 14.000
             BindTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1612,7 +1612,7 @@ function lib:Window(text, preset, closebind)
             BindText.Size = UDim2.new(0, 337, 0, 42)
             BindText.Font = Enum.Font.Gotham
             BindText.Text = Key
-            BindText.TextColor3 = Color3.fromRGB(255, 255, 255)
+            BindText.TextColor3 = Color3.fromRGB(0, 255, 255)
             BindText.TextSize = 14.000
             BindText.TextXAlignment = Enum.TextXAlignment.Right
 
