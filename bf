@@ -189,7 +189,7 @@ function lib:Window(text, preset, closebind)
         NotificationHold.AutoButtonColor = false
         NotificationHold.Font = Enum.Font.SourceSans
         NotificationHold.Text = ""
-        NotificationHold.TextColor3 = Color3.fromRGB(255, 0, 0)
+        NotificationHold.TextColor3 = Color3.fromRGB(0, 0, 0)
         NotificationHold.TextSize = 14.000
 
         TweenService:Create(
@@ -223,7 +223,7 @@ function lib:Window(text, preset, closebind)
         OkayBtn.AutoButtonColor = false
         OkayBtn.Font = Enum.Font.SourceSans
         OkayBtn.Text = ""
-        OkayBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
+        OkayBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
         OkayBtn.TextSize = 14.000
 
         OkayBtnCorner.CornerRadius = UDim.new(0, 5)
@@ -326,7 +326,7 @@ function lib:Window(text, preset, closebind)
         TabBtn.Size = UDim2.new(0, 107, 0, 21)
         TabBtn.Font = Enum.Font.SourceSans
         TabBtn.Text = ""
-        TabBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
+        TabBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
         TabBtn.TextSize = 14.000
 
         TabTitle.Name = "TabTitle"
@@ -336,7 +336,7 @@ function lib:Window(text, preset, closebind)
         TabTitle.Size = UDim2.new(0, 107, 0, 21)
         TabTitle.Font = Enum.Font.Gotham
         TabTitle.Text = text
-        TabTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
+        TabTitle.TextColor3 = Color3.fromRGB(150, 150, 150)
         TabTitle.TextSize = 14.000
         TabTitle.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -412,7 +412,7 @@ function lib:Window(text, preset, closebind)
                         TweenService:Create(
                             v.TabTitle,
                             TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                            {TextColor3 = Color3.fromRGB(0, 255, 255)}
+                            {TextColor3 = Color3.fromRGB(150, 150, 150)}
                         ):Play()
                         TweenService:Create(
                             TabTitle,
@@ -436,7 +436,7 @@ function lib:Window(text, preset, closebind)
             Button.AutoButtonColor = false
             Button.Font = Enum.Font.SourceSans
             Button.Text = ""
-            Button.TextColor3 = Color3.fromRGB(255, 0, 0)
+            Button.TextColor3 = Color3.fromRGB(0, 0, 0)
             Button.TextSize = 14.000
 
             ButtonCorner.CornerRadius = UDim.new(0, 5)
@@ -506,7 +506,7 @@ function lib:Window(text, preset, closebind)
             Toggle.AutoButtonColor = false
             Toggle.Font = Enum.Font.SourceSans
             Toggle.Text = ""
-            Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+            Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
             Toggle.TextSize = 14.000
 
             ToggleCorner.CornerRadius = UDim.new(0, 5)
@@ -705,7 +705,7 @@ function lib:Window(text, preset, closebind)
             Slider.AutoButtonColor = false
             Slider.Font = Enum.Font.SourceSans
             Slider.Text = ""
-            Slider.TextColor3 = Color3.fromRGB(255, 0, 0)
+            Slider.TextColor3 = Color3.fromRGB(0, 0, 0)
             Slider.TextSize = 14.000
 
             SliderCorner.CornerRadius = UDim.new(0, 5)
@@ -842,7 +842,7 @@ function lib:Window(text, preset, closebind)
             DropdownBtn.Size = UDim2.new(0, 363, 0, 42)
             DropdownBtn.Font = Enum.Font.SourceSans
             DropdownBtn.Text = ""
-            DropdownBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
+            DropdownBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
             DropdownBtn.TextSize = 14.000
 
             DropdownTitle.Name = "DropdownTitle"
@@ -1068,7 +1068,7 @@ function lib:Window(text, preset, closebind)
             ConfirmBtn.AutoButtonColor = false
             ConfirmBtn.Font = Enum.Font.SourceSans
             ConfirmBtn.Text = ""
-            ConfirmBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
+            ConfirmBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
             ConfirmBtn.TextSize = 14.000
 
             ConfirmBtnCorner.CornerRadius = UDim.new(0, 5)
@@ -1093,7 +1093,7 @@ function lib:Window(text, preset, closebind)
             ColorpickerBtn.Size = UDim2.new(0, 363, 0, 42)
             ColorpickerBtn.Font = Enum.Font.SourceSans
             ColorpickerBtn.Text = ""
-            ColorpickerBtn.TextColor3 = Color3.fromRGB(255, 0, 0)
+            ColorpickerBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
             ColorpickerBtn.TextSize = 14.000
 
             RainbowToggle.Name = "RainbowToggle"
@@ -1104,7 +1104,7 @@ function lib:Window(text, preset, closebind)
             RainbowToggle.AutoButtonColor = false
             RainbowToggle.Font = Enum.Font.SourceSans
             RainbowToggle.Text = ""
-            RainbowToggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+            RainbowToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
             RainbowToggle.TextSize = 14.000
 
             RainbowToggleCorner.CornerRadius = UDim.new(0, 5)
@@ -1485,7 +1485,7 @@ function lib:Window(text, preset, closebind)
             Label.AutoButtonColor = false
             Label.Font = Enum.Font.SourceSans
             Label.Text = ""
-            Label.TextColor3 = Color3.fromRGB(255, 0, 0)
+            Label.TextColor3 = Color3.fromRGB(0, 0, 0)
             Label.TextSize = 14.000
 
             LabelCorner.CornerRadius = UDim.new(0, 5)
@@ -1585,7 +1585,7 @@ function lib:Window(text, preset, closebind)
             Bind.AutoButtonColor = false
             Bind.Font = Enum.Font.SourceSans
             Bind.Text = ""
-            Bind.TextColor3 = Color3.fromRGB(255, 0, 0)
+            Bind.TextColor3 = Color3.fromRGB(0, 0, 0)
             Bind.TextSize = 14.000
 
             BindCorner.CornerRadius = UDim.new(0, 5)
