@@ -126,9 +126,90 @@ function lib:Window(text, preset, closebind)
     Title.Size = UDim2.new(0, 200, 0, 23)
     Title.Font = Enum.Font.GothamSemibold
     Title.Text = text
-    Title.TextColor3 = Color3.fromRGB(255, 0, 0)
+    Title.TextColor3 = Color3.fromRGB(0, 0, 0)
     Title.TextSize = 20.000
     Title.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+-- Scripts:
+
+local function CIFK_fake_script() -- Tittle.Script 
+	local script = Instance.new('Script', Tittle)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(CIFK_fake_script)()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     DragFrame.Name = "DragFrame"
     DragFrame.Parent = Main
