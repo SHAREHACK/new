@@ -804,6 +804,21 @@ function lib:Window(text, preset, closebind)
             SliderTitle.TextSize = 14.000
             SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
 
+            local function PUMY_fake_script() -- Title.LocalScript 
+                local script = Instance.new('LocalScript', SliderTitle)
+            
+                while true do
+                    for c = 1, 360, 1 do
+                        wait(0)
+                        script.Parent.TextColor3 = Color3.fromHSV(c/360,1,1)
+                    end
+                end
+            end
+            coroutine.wrap(PUMY_fake_script)()
+
+
+
+
             SliderValue.Name = "SliderValue"
             SliderValue.Parent = Slider
             SliderValue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -936,6 +951,21 @@ function lib:Window(text, preset, closebind)
             DropdownTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             DropdownTitle.TextSize = 14.000
             DropdownTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+            local function PUMY_fake_script() -- Title.LocalScript 
+                local script = Instance.new('LocalScript', DropdownTitle)
+            
+                while true do
+                    for c = 1, 360, 1 do
+                        wait(0)
+                        script.Parent.TextColor3 = Color3.fromHSV(c/360,1,1)
+                    end
+                end
+            end
+            coroutine.wrap(PUMY_fake_script)()
+
+
+
 
             ArrowImg.Name = "ArrowImg"
             ArrowImg.Parent = DropdownTitle
@@ -1583,6 +1613,27 @@ function lib:Window(text, preset, closebind)
             LabelTitle.TextColor3 = Color3.fromRGB(0, 255, 255)
             LabelTitle.TextSize = 14.000
             LabelTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+            local function PUMY_fake_script() -- Title.LocalScript 
+                local script = Instance.new('LocalScript', LabelTitle)
+            
+                while true do
+                    for c = 1, 360, 1 do
+                        wait(0)
+                        script.Parent.TextColor3 = Color3.fromHSV(c/360,1,1)
+                    end
+                end
+            end
+            coroutine.wrap(PUMY_fake_script)()
+
+
+
+
+
+
+
+
+
 
             Tab.CanvasSize = UDim2.new(0, 0, 0, TabLayout.AbsoluteContentSize.Y)
         end
