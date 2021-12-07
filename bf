@@ -119,7 +119,7 @@ function lib:Window(text, preset, closebind)
     TabHoldLayout.Padding = UDim.new(0, 11)
 
     Title.Name = "Title"
-    Title.Parent = Main
+    Title.Parent = hnlib
     Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Title.BackgroundTransparency = 1.000
     Title.Position = UDim2.new(0.0339285731, 0, 0.0564263314, 0)
